@@ -1,0 +1,9 @@
+<h1> Fotos de perros por raza </h1>
+
+{{#each dogsArr}}
+    {{!-- 
+    <img src="{{this}}" alt="perrete" width="300px">
+    <p> El mejor perrito del mundo</p>
+    --}}
+{{>dogpartial this}} {{!-- a dogpartial le envia el this, para la imagen --}}
+{{/each}}

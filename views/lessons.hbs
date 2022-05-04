@@ -1,0 +1,21 @@
+<div>
+    <h2>Estas son las lecciones que enseñamos</h2>
+    {{!-- {{lessonsL}} --}}
+
+    {{!--{{lessonsL.0.topic}} --}} {{!-- saca el primer elemento (0) --}}
+
+
+    {{#each lessonsL}} {{!-- inicio del bucle --}}
+
+    <div>
+        <p>About: {{this.topic}} </p> {{!-- this.topic saca la propiedad topic de cada elem de lessonsL --}}
+        <p>Descripción: {{this.description}} </p>
+        <p>Bootcamp: {{this.bootcamp}} </p>
+
+    </div>
+    <hr>
+
+    {{/each}} {{!-- fin del bucle --}}
+
+
+</div>
